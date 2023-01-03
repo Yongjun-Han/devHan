@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.BG {
+  width: 100vw;
+  height: 100vh;
+  background-color: #252525;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

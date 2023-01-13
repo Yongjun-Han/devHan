@@ -1,30 +1,28 @@
 import './Css/App.css'
-import React from 'react';
-import Lottie from 'react-lottie';
-import flex from './Lottie/flex.json'
+import React, {useState, useEffect} from 'react';
+import { Navigate, useNavigate, useNavigation } from 'react-router-dom';
+import Slide from './Components/Home/Slide';
 
 function App() {
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: flex,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid meet',
-    },
-  };
+  const navigate = useNavigate();
+  const [hover, setHover] = useState("")
 
   return (
+    
     <div className="BG">
-      <div>
-        <Lottie 
-          className="lottie"
-          options={defaultOptions}
-          speed={0.4}
-          height={6000}
-          width={6000}
-          isClickToPauseDisabled={true}
-        />
+      {/* 메인영역 */}
+      <div className='main'>
+
+        {/* 타이틀 문구 */}
+        <div className='titleContainer'>
+          <p>“ I want to be a</p>
+          <p className='title'> flexible developer </p>
+          <p>”</p>
+        </div>
+
+        {/* 페이지 슬라이더 */}
+        <Slide/>
       </div>
     </div>
   );

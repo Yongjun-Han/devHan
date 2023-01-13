@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box; transition: .7s;}
 
 @font-face {
   font-family: 'Pretendard-Regular';
@@ -22,3 +22,11 @@
   margin-right: 32px;
   margin-left: 32px;
 }
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

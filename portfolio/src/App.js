@@ -6,8 +6,6 @@ import Slide from './Components/Home/Slide';
 function App() {
 
   const navigate = useNavigate();
-  const [hover, setHover] = useState("")
-
   return (
     
     <div className="BG">
@@ -23,6 +21,11 @@ function App() {
 
         {/* 페이지 슬라이더 */}
         <Slide/>
+        <div className='waterMarkContainer'>
+          <p>Copyrightⓒ2022</p>
+          <p className='waterMark'> devHAN </p>
+          <p>All rights reserved.</p>
+        </div>
       </div>
     </div>
   );

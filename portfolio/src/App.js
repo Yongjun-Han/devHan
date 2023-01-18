@@ -19,8 +19,10 @@ function App() {
           <p>”</p>
         </div>
 
-        {/* 페이지 슬라이더 */}
+        {/* 페이지 탭바 슬라이더 */}
         <Slide/>
+
+        {/* 워터마크 */}
         <div className='waterMarkContainer'>
           <p>Copyrightⓒ2022</p>
           <p className='waterMark'> devHAN </p>

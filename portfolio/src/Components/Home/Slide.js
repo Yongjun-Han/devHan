@@ -2,14 +2,13 @@ import React, {useState, useEffect} from 'react';
 import { Navigate, useNavigate, useNavigation } from 'react-router-dom';
 import '../../Css/Slide.css'
 import styled from 'styled-components'
+
 function Slide() {
 
-  
   const navigate = useNavigate();
   const [project, setProject] = useState('#1e1e1e')
   const [contact, setContact] = useState('#1e1e1e')
   const [resume, setResume] = useState('#1e1e1e')
-
 
   return (
     <div className='slideContainer'>
@@ -18,7 +17,7 @@ function Slide() {
           className='project'
           onMouseEnter={(e)=>{
             if(e.target.innerText === "Projects"){
-              setProject('rgb(0, 136, 255)')
+              setProject('#d43')
             }
             console.log(e.target.innerText)
           }}
@@ -38,7 +37,7 @@ function Slide() {
         className='contact'
         onMouseEnter={(e)=>{
           console.log(e)
-          setContact('rgb(0, 136, 255)')
+          setContact('#d43')
         }}
         onMouseOut={()=>{
           setContact('#1e1e1e')
@@ -55,7 +54,7 @@ function Slide() {
         <p
         className='resume'
         onMouseEnter={(e)=>{
-          setResume('rgb(0, 136, 255)')
+          setResume('#d43')
           console.log(e)
         }}
         onMouseOut={()=>{

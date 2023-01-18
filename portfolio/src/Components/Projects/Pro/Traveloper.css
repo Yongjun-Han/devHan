@@ -1,0 +1,16 @@
+.cover {
+  width: 100%;
+  height: 1000px;
+}
+
+.cover :first-child {
+  width: 35%;
+  height: 100%;
+  background-color: #C1D6DD;
+}
+
+.overview {
+  width: 100%;
+  height: 800px;
+  border: 4px solid cadetblue;
+}
